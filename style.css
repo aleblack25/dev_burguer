@@ -15,7 +15,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
 }
 
 button {
@@ -27,10 +27,12 @@ button {
   padding: 10px;
   cursor: pointer;
   font-weight: bold;
-
+  width: 160px;
+  height: 90px ;
   transition:
     transform 0.3s ease,
     color 0.3s ease;
+  
 }
 
 button:hover {
@@ -40,6 +42,9 @@ button:hover {
 
 button:hover span {
   color: yellow;
+   transition:
+    transform 0.3s ease,
+    color 0.3s ease;
 }
 
 button::after {
@@ -54,5 +59,31 @@ button::after {
 }
 
 button:hover::after {
+  width: 99.5%;
+}
+
+ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  justify-content: center;  
+}
+
+img {
   width: 100%;
+}
+
+p {
+  color: #ffff;
+}
+
+li {
+  border: 2px solid #5106c9;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.item-price {
+  font-size: bold;
+  color: #79cb15;
 }
